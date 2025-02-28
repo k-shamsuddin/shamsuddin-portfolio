@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khaja Shamsuddin Ahmed Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="responsive.css">
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Remix icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="image/Model.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Start Header Section -->
+    <div class="header" id="home">
+        <div class="header-container">
+            <nav>
+                <div class="logo"><i class="fa-solid fa-mug-hot"></i> Khaja</div>
+                <ul id="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#education-sec">Education</a></li>
+                  <!--  <li><a href="#project">Projects</a></li>-->
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fa-solid fa-xmark fas" id="closeMenu"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" id="openMenu"></i>
+            </nav>
+
+            <div class="hero-section">
+                <div class="left-content">
+                    <h1>Hi There, <br>I'm <span>Khaja Shamsuddin</span></h1>
+                    <p>I'm a <span id="auto-type"></span></p>
+
+                    <ul class="social-media">
+                        <li><a href="https://github.com/k-shamsuddin" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+                        <li><a href="https://www.instagram.com/k.shamsuddin.a" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/Khaja-Shamsuddin-Ahmed" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="card-content">
+                    <img src="image/Model.jpg" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Section -->
+
+    <!-- Start About Section -->
+    <div id="about">
+        <div class="about-container">
+            <h1 class="sub-title"><i class="fa-solid fa-person"></i> About Me</h1>
+            <div class="row">
+                <div class="about-card">
+                    <img src="image/Second model.jpg" alt="About Image">
+                </div>
+    
+                <div id="right-about-sec">
+                    <p class="info">Hi There! I am Khaja Shamsuddin Ahmed, a Bachelor of Commerce (Computer Application) student at Osmania University. While my academic background is in commerce, my passion for technology has driven me to explore the world of DevOps, cloud computing, and automation. I am currently undergoing training in DevOps, eager to master tools and practices that bridge development and operations seamlessly.
+
+                        With a strong drive for continuous learning, I am actively looking for opportunities to apply my skills, collaborate with industry professionals, and grow in the DevOps domain. Open to internships, freelance projects, and networking—let's connect and innovate together!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>DevOps</span><br>Linux (Bash), Version Control (Git, GitHub), CI/CD (Jenkins), IaC (Terraform), Containers (Docker, Kubernetes), Config Management (Ansible), Monitoring & Logging (Prometheus), Networking & Security (IAM, Firewalls, VPNs).</li>
+                            <li><span>Cloud Computing</span><br>Cloud Platforms (AWS, Azure, GCP), Compute & Storage (EC2, S3, Lambda), Networking (VPC, Load Balancers, Route 53), Security & IAM (IAM, Security Groups), Databases (RDS, DynamoDB), Serverless (Lambda), Monitoring (CloudWatch).</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>BCOM Computer Application at Osmania University</li>
+                            <li><span>2019-2021</span><br>Board Of Intermediate</li>
+                            <li><span>2018-2019</span><br>Board Of Secondary (SSC)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span><br>Always learning new things to keep myself updated.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About Section -->
+
+    <!-- Start Skills Section -->
+    <div id="skill">
+        <div class="skill-container">
+            <h1><i class="fa-solid fa-ghost"></i> My Skills</h1>
+            <div class="innerSkill-content">
+                <div class="box">
+                    <img src="image/Amazon-Web-Services-AWS-Logo.png" alt="AWS">
+                    <p>AWS</p>
+                </div>
+    
+                <div class="box">
+                    <img src="image/Linux-1.JPG" alt="Linux">
+                    <p>Linux</p>
+                </div>
+    
+                <div class="box">
+                    <img src="image/GitHub.png" alt="GitHub">
+                    <p>GitHub</p>
+                </div>
+    
+                <div class="box">
+                    <img src="image/Terraform.png" alt="Terraform">
+                    <p>Terraform</p>
+                </div>
+    
+                <div class="box">
+                    <img src="image/Kubernetes.png" alt="Kubernetes">
+                    <p>Kubernetes</p>
+                </div>
+    
+                <div class="box">
+                    <img src="image/Docker.webp" alt="Docker">
+                    <p>Docker</p>
+                </div>
+    
+                <div class="box">
+                    <img src="image/Jenkins.png" alt="Jenkins">
+                    <p>Jenkins</p>
+                </div>
+    
+                <div class="box">
+                    <img src="image/ansible-logo.webp" alt="Ansible">
+                    <p>Ansible</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Skills Section -->
+
+    <!-- Start Education section -->
+    <div id="education-sec">
+        <div class="education-container">
+            <div class="edu-head">
+                <h1><i class="fa-solid fa-graduation-cap"></i> My Education</h1>
+                <p>The beautiful thing about learning is that no one can take it away from you.</p>
+            </div>
+
+            <div class="college-card">
+                <img src="image/OU.jpg" alt="Osmania University">
+                <div class="college-info">
+                    <h1>Bachelor of Commerce (Computer Application)</h1>
+                    <p>Osmania University - Hyderabad</p>
+                    <p class="sec-p">2021 - 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Education Section -->
+
+    <!-- Start Project Section -->
+    <!-- <div id="project">
+        <div class="project-container">
+            <h1><i class="fa-solid fa-laptop"></i> My Projects</h1>
+
+            <div class="project-list">
+                <div class="box">
+                    <img src="image/Todo app.jpg" alt="Todo App">
+                    <div class="layer">
+                        <h3>Todo App</h3>
+                        <p>The Todo List app! With this app, you can easily add or delete your tasks, and save them for later.</p>
+                        <div class="view">
+                            <a href="https://my-todo-appex76.vercel.app/" target="_blank" class="btn"><i class="ri-eye-line"></i>View</a>
+                            <a href="https://github.com/YourGitHubUsername/Todo-app" class="btn"><i class="ri-codepen-line"></i>Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="image/Dom project.jpg" alt=" Project">
+                    <div class="layer">
+                        <h3>DOM Basic Project</h3>
+                        <p>Excited to share my new DOM(Document Object Model) project, where I've created dynamic and interactive web pages</p>
+                        <div class="view">
+                            <a href="https://dom-project-lake.vercel.app/" target="_blank" class="btn"><i class="ri-eye-line"></i>View</a>
+                            <a href="https://github.com/YourGitHubUsername/DOM-Project" class="btn"><i class="ri-codepen-line"></i>Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="image/project.jpg" alt="projet">
+                    <div class="layer">
+                        <h3>Tic Tac Toe</h3>
+                        <p>I created Tic tac toe game using HTML, CSS, JavaScript and you can try it with your friends</p>
+                        <div class="view">
+                            <a href="https://tictac0.vercel.app/" target="_blank" class="btn"><i class="ri-eye-line"></i>View</a>
+                            <a href="https://github.com/YourGitHubUsername/Tic-Tac-Toe-Game" class="btn"><i class="ri-codepen-line"></i>Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <a href="#" class="btn-2">See More<i class="ri-arrow-right-s-fill"></i></a>
+        </div>
+    </div> -->
+    <!-- End Project Section -->
+
+    <!-- Start Contact section -->
+    <div id="contact">
+        <div class="contact-container">
+            <h1><i class="fa-solid fa-user"></i> Contact Me</h1>
+            <div class="row">
+                <div class="left-contact">
+                    <p><i class="fa-solid fa-envelope"></i> k.shamsuddin.a@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 76XXXXXX15</p>
+                    <div id="msg"></div>
+                </div>
+                <div class="right-contact">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" placeholder="Message" rows="5" required></textarea>
+                        <button type="submit" class="sub-btn">Submit <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Section -->
+
+    <!-- Start Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <h3>Khaja Shamsuddin Ahmed Portfolio</h3>
+                <p>Thanks for visiting my personal portfolio website. If you have any questions or feedback, please feel free to reach out.</p>
+            </div>
+            <div class="quic-links">
+                <h3>Quick Links</h3>
+                <a href="#home"><i class="ri-send-plane-2-line"></i> Home</a>
+                <a href="#about"><i class="ri-send-plane-2-line"></i> About</a>
+                <a href="#skill"><i class="ri-send-plane-2-line"></i> Skills</a>
+                <a href="#education-sec"><i class="ri-send-plane-2-line"></i> Education</a>
+               <!-- <a href="#project"><i class="ri-send-plane-2-line"></i> Projects</a> -->
+                <a href="#contact"><i class="ri-send-plane-2-line"></i> Contact</a> 
+            </div>
+            <div class="contact-info">
+                <h3>Contact info</h3>
+                <p><i class="fa-solid fa-envelope"></i> k.shamsuddin.a@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 76XXXXXX15</p>
+                <p><i class="ri-map-pin-user-fill"></i> Hyderabad</p>
+                
+                <ul class="footer-social">
+                    <li><a href="https://github.com/k-shamsuddin" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+                    <li><a href="https://www.instagram.com/k.shamsuddin.a" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/Khaja Shamsuddin Ahmed" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright-message">
+            <p>Copyright &copy; 2025, Made with <i class="ri-heart-fill"></i> By <span>Khaja Shamsuddin Ahmed</span></p>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <!-- Auto Type CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- My Script -->
+    <script src="script.js"></script>
+
+    <!-- Submitted Message Script -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzB-mRePqb3-2SGGLfKcbMTJwh2CLwpOo2h9yEKRl_ufxoDgRnnKRR5hWMBD9VfOxlayg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                },2000)
+
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+  </body>
+</html>
